@@ -33,7 +33,7 @@ All datasets are prepared in a raw format consisting of:
 ```text
 multimodal-clustering-benchmarks/
 ├── download_pascal_sentences.py
-├── download_flickr30k.py
+├── build_RGB_D_nyu_depth.py (To be added soon)
 ├── build_coco_cross.py
 ├── build_coco_all.py
 └── README.md
@@ -115,3 +115,38 @@ coco_all/
 - 43 categories 
 - 5 captions per image  
 
+## Feature Extraction
+
+Once you have constructed your raw dataset folders (e.g., coco_cross/raw/image/...), you can use the extract_features.py script to extract multimodal embeddings and save them into a standardized MATLAB .mat file for downstream clustering and evaluation.
+
+### What it does
+
+The script iterates through the raw dataset and processes both the image and text views:
+
+* **Image Features (View 1):** Uses a ResNet-50 model (pretrained on ImageNet) with average pooling to extract 2048-dimensional visual features.
+    
+* **Text Features (View 2):** Uses Gensim's GloVe-Wiki-Gigaword-300 model to process the captions. It tokenizes the text and averages the 300-dimensional word vectors to create a unified 300-dimensional document vector (I am aiming to use doc2vec but i couldn't find any available pretrained doc2vec wiki for now so i'am using Glove).
+    
+* **Data Alignment & Export:** Matches the paired views, registers the ground truth folder name as an integer class, and saves everything directly into the dataset folder (e.g., `coco_cross/coco_cross.mat`).
+
+The resulting `.mat` file contains four variables:
+* `X1`: The image feature matrix (Shape: `N x 2048`)
+* `X2`: The text feature matrix (Shape: `N x 300`)
+* `Y`: The ground truth label array (Shape: `N x 1`)
+* `label_mapping`: A reference array mapping the integer labels in `Y` back to their original string class names.
+
+
+### How to Run
+
+Execute the script from your terminal, passing the name of the target dataset folder using the `--dataset` argument:
+
+```bash
+# Example: Extract features for the COCO-cross dataset
+python extract_features.py --dataset coco_cross
+
+# Example: Extract features for the Pascal dataset
+python extract_features.py --dataset pascal
+
+# Example: Extract features for the COCO-all dataset
+python extract_features.py --dataset coco_all
+```
