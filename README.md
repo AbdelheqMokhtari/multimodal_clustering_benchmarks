@@ -150,3 +150,28 @@ python extract_features.py --dataset pascal
 # Example: Extract features for the COCO-all dataset
 python extract_features.py --dataset coco_all
 ```
+
+
+## Donwload Multimodal Attributed Graph benchmark 
+
+we can download any of the datasets using the script 'MAGP.py' for example
+
+```bash
+python MAGB.py --dataset Movies
+```
+
+you can download any dataset from the list 
+
+```bash
+- Movies
+- Magazines
+- RedditS
+- Computers
+- Photo
+- Pet
+- Office
+- Children
+- History
+```
+
+link to the original repo : https://github.com/sktsherlock/MAGB/tree/master 
