@@ -1,0 +1,16 @@
+Dataset, temperature, embeddings_dim
+Yale, 1.0, 32
+3Sources, 2.0, 16
+MSRC-v5, 10.0, 16
+BBCSport, 10.0, 64
+ProteinFold, 5.0, 64
+WebKB, 10.0, 32
+Reuters-1200, 10.0, 16
+Reuters-1500, 5.0, 12
+100Leaves, 0.5, 32 
+Handwritten, 10.0, 5
+UCI, 2.0, 5
+OutDoorScene, 10.0, 9
+MNIST-4, 0.5, 8
+MNIST-10K, 5.0, 8
+ALOI, 5.0, 12

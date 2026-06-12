@@ -1,0 +1,8 @@
+Dataset,Instances,Classes,Modalities,Modalities_Type,Category,Description
+IAPR-TC12,11032,6,2,"Image, Text",MMC,"Natural image dataset containing photographs of people, animals, sports, landscapes, and daily-life scenes. Each image is paired with a textual description."
+ESP-Game,13855,7,2,"Image, Text",MMC,Image annotation dataset where each image is associated with multiple user-provided tags and descriptions collected through the ESP Game platform.
+MIRFlickr,12154,7,2,"Image, Text",MMC,Flickr photo collection containing images and user-generated tags. Widely used for image-text representation learning and multimodal clustering.
+NUS-WIDE,20000,8,2,"Image, Text",MMC,Large-scale web image dataset with associated textual tags. The commonly used MMC subset contains 20k image-text pairs across 8 semantic categories.
+Pascal Sentences, 1000, 20, 2, "Image, Text", MMC, Multimodal image–text dataset containing 1000 images across 20 object categories each paired with five descriptive sentences.
+COCO-Cross, 7429, 10, 2, "Image, Text", MMC, Image–text dataset containing 7429 samples from 10 object categories where each image contains a single dominant object.
+COCO-All, 23189, 43, 2, "Image, Text", MMC, Image–text dataset containing 23189 samples across 43 object categories filtered to retain only single-object images with sufficient category representation.

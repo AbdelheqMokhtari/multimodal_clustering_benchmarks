@@ -1,0 +1,10 @@
+Dataset, #_of_Nodes, #_of_Edges, #_of_classes, #_of_modalites, Modalities, Category,  Description
+Toys, 20695, 113402, 18, 2, Image + Text, MMAG, Amazon Toys & Games product network. Nodes are toy products with text and image modalities and edges represent product associations such as co-purchase or similarity.
+Movies, 16672, 160802, 20, 2, Image + Text, MMAG, Amazon product graph containing movie-related items. Each node represents a movie product with textual descriptions and product images; edges capture relationships between products.
+Grocery-S, 17074, 142262, 20, 2, Image + Text, MMAG, Small-scale version of the Amazon Grocery dataset. Contains grocery products represented by textual and visual features used for multimodal graph clustering evaluation.
+Grocery, 84379, 1590082, 20, 2, Image + Text, MMAG, Large-scale Amazon Grocery product graph. Nodes correspond to grocery items with multimodal attributes (text and images) providing a challenging benchmark for scalable clustering.
+Reddit-S, 15894, 283080, 20, 2, Image + Text, MMAG, Small-scale graph derived from the RedCaps dataset. Nodes correspond to Reddit posts/images with associated captions represented through text and image embeddings
+Reddit, 99638, 583594, 50, 2, Image + Text, MMAG, Large-scale version of the RedCaps-based multimodal graph. Contains Reddit image-caption pairs connected through graph relationships and categorized into multiple classes.
+Photo, 36731, 615958, 12, 2, Image + Text, MMAG, Amazon product graph from the Photo category. Each node represents a photography-related product described by both textual content and product images.
+Arts, 58487, 812252, 11, 2, Image + Text, MMAG, Amazon Arts Crafts & Sewing product graph. Nodes are arts-and-crafts products with multimodal attributes (text and images) connected through product relationships.
+

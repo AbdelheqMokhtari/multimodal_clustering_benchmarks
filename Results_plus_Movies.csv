@@ -1,0 +1,10 @@
+Dataset-variant, Category, Acc, NMI, ARI, F1, Time per run, temperature, Beta
+"Image Resnet + Text MiniLM", MMC, 0.1663 (±0.0032), 0.1292 (±0.0015), 0.0403 (±0.0010), 0.1362 (±0.0026), 5.54s, 0.5, - 
+"Image Resnet + Text ClIP", MMC,  0.1597 (±0.0040), 0.1209 (±0.0018),  0.0354 (±0.0023), 0.1304 (±0.0029), 6.04s, 5.0, -
+"Image ClIP + Text CLIP", MMC, 0.1953 (±0.0072), 0.1611 (±0.0014), 0.0547 (±0.0046), 0.1572 (±0.0038), 4.9, 5.0, -
+"Image CLIP + Text MiniLM", MMC, 0.1940 (±0.0115, 0.1646 (±0.0014), 0.0534 (±0.0055), 0.1561 (±0.0064), 4.77s, 2.0, -
+"Image Resnet + text MiniLM with graph", MMAG, 0.1645 (±0.0014), 0.1130 (±0.0010), 0.0290 (±0.0007), 0.1326 (±0.0011), 4.07, 5.0, 1.0 
+"Image CLIP + Text ClIP with graph", MMAG, 0.2165 (±0.0024), 0.1838 (±0.0018), 0.0657 (±0.0016), 0.1735 (±0.0052), 2.69s, 2.0, 1.0
+"Image ClIP + Text miniLM with graph", MMAG, 0.2048 (±0.0151), 0.1843 (±0.0030), 0.0521 (±0.0079), 0.1724 (±0.0098), 2.55s, 2.0, 1.0
+"Image Resnet + Text CLIP with graph", MMAG,  0.2100 (±0.0082), 0.1846 (±0.0021), 0.0507 (±0.0042), 0.1652 (±0.0055), 2.74s, 1.0, 1.0
+"clip-vit-large-patch14 Image + gemma_7b_256_mean Text" with Graph, MMAG, 0.2025 (±0.0066), 0.1751 (±0.0015), 0.0586 (±0.0055), 0.1665 (±0.0043), 8.65s, 1.0, 1.0

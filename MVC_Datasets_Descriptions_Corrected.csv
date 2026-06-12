@@ -1,0 +1,16 @@
+Dataset,Instances,Classes,Views,Modalities_Views,Category,Description
+Yale,165,15,3,Face image features,MVC,Face recognition dataset containing 15 individuals represented by multiple visual feature views.
+3Sources,169,6,3,News text views,MVC,"News articles collected from BBC, Reuters, and The Guardian, where each source forms a separate view."
+MSRC-v5,210,7,5,Image descriptors,MVC,"Image dataset with multiple visual feature representations including color, texture, and shape descriptors."
+BBCSport,544,5,2,Text features,MVC,Sports news articles grouped into five categories and represented by multiple textual views.
+ProteinFold,694,27,12,Protein descriptors,MVC,Protein fold recognition dataset with multiple biological and structural feature views.
+WebKB,1051,4,2,Content and links,MVC,University web pages represented by textual content and hyperlink-derived features.
+Reuters-1200,1200,6,5,Multilingual text views,MVC,Reuters news dataset represented in multiple language-specific feature spaces.
+Reuters-1500,1500,6,5,Multilingual text views,MVC,Larger Reuters multilingual dataset used for multi-view text clustering.
+100Leaves,1600,100,3,"Leaf shape, texture, margin",MVC,Plant leaf dataset with three complementary botanical feature views.
+Handwritten,2000,10,6,Handwritten digit features,MVC,Handwritten digit dataset represented by six different feature extractors.
+UCI,2000,10,3,Digit feature views,MVC,Multi-feature handwritten digit dataset derived from the UCI repository.
+OutDoorScene,2688,8,4,Scene image descriptors,MVC,Outdoor scene recognition dataset represented using multiple visual descriptors.
+MNIST-4,4000,10,4,Digit feature views,MVC,MNIST handwritten digits represented using four complementary feature views.
+MNIST-10K,10000,10,4,Digit feature views,MVC,"Large-scale MNIST multi-view benchmark with 10,000 samples."
+ALOI,108000,1000,4,Object image features,MVC,Amsterdam Library of Object Images represented through multiple visual feature views.
